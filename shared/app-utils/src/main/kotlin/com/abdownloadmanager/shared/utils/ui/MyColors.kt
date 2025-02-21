@@ -22,13 +22,13 @@ class MyColors(
 
 
     val primary: Color,
-    val primaryVariant: Color = primary,
+    val primaryVariant: Color,
     val onPrimary: Color,
     val secondary: Color,
-    val secondaryVariant: Color = secondary,
+    val secondaryVariant: Color,
     val onSecondary: Color,
     val background: Color,
-    val backgroundVariant: Color = background,
+    val backgroundVariant: Color,
     val onBackground: Color,
     val onSurface: Color,
     val surface: Color,
@@ -166,32 +166,44 @@ fun AnimatedColors(
 }
 
 val darkColors = MyColors(
-    primary = Color(0xFFE63946), // Red Pantone
-    onPrimary = Color.White, // Text color on primary
-    secondary = Color(0xFFA8DADC), // Non-Photo Blue
-    onSecondary = Color.White, // Text color on secondary
-    background = Color(0xFF1D3557), // Berkeley Blue
-    onBackground = Color(0xFFF1FAEE), // Honeydew
-    surface = Color(0xFF457B9D), // Cerulean
-    error = Color(0xFFE63946), // Red Pantone
-    success = Color(0xFFA8DADC), // Non-Photo Blue
-    warning = Color(0xFFFFC107), // Choose a suitable color for warning
-    info = Color(0xFF1D3557), // Berkeley Blue
-    // Other colors...
+    primary = Color(0xFFE63946FF),
+    primaryVariant = Color(0xFFA8DADCFF),
+    onPrimary = Color(0xFFF1FAEEFF),
+    secondary = Color(0xFF457B9DFF),
+    secondaryVariant = Color(0xFF1D3557FF),
+    onSecondary = Color(0xFFF1FAEEFF),
+    background = Color(0xFFF1FAEEFF),
+    backgroundVariant = Color(0xFFF1FAEEFF),
+    onBackground = Color(0xFF353535FF),
+    onSurface = Color(0xFF353535FF),
+    surface = Color(0xFFF1FAEEFF),
+    error = Color(0xFFFF5757FF),
+    onError = Color(0xFFFFFFFF),
+    success = Color(0xFF69BA5AFF),
+    onSuccess = Color(0xFFFFFFFF),
+    warning = Color(0xFFFFBE56FF),
+    info = Color(0xFF2F77D4FF),
+    onInfo = Color(0xFFFFFFFF),
+    isLight = false,
+    name = "Dark Colors",
+    id = "darkColors",
 )
 
 val lightColors = MyColors(
-    primary = Color(0xFFE63946), // Red Pantone
-    primaryVariant = Color(0xFFA8DADC), // Non-Photo Blue
-    onPrimary = Color.Black, // Text color on primary
-    secondary = Color(0xFF457B9D), // Cerulean
-    onSecondary = Color.White, // Text color on secondary
-    background = Color(0xFFF1FAEE), // Honeydew
-    onBackground = Color(0xFF1D3557), // Berkeley Blue
-    surface = Color(0xFFFFFFFF), // White for light mode
-    error = Color(0xFFE63946), // Red Pantone
-    success = Color(0xFFA8DADC), // Non-Photo Blue
-    warning = Color(0xFFFFC107), // Choose a suitable color for warning
-    info = Color(0xFF457B9D), // Cerulean
-    // Other colors...
+    primary = Color(0xFFE63946FF),
+    primaryVariant = Color(0xFFA8DADCFF),
+    onPrimary = Color.Black,
+    secondary = Color(0xFF457B9DFF),
+    onSecondary = Color.White,
+    background = Color(0xFFF1FAEEFF),
+    onBackground = Color(0xFF1D3557FF),
+    surface = Color(0xFFFFFFFF),
+    error = Color(0xFFE63946FF),
+    success = Color(0xFFA8DADCFF),
+    warning = Color(0xFFFFC107FF),
+    info = Color(0xFF457B9DFF),
+    onInfo = Color(0xFFFFFFFF),
+    isLight = true,
+    name = "Light Colors",
+    id = "lightColors",
 )
