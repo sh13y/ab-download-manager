@@ -42,6 +42,7 @@ import kotlinx.coroutines.withTimeout
 import org.koin.core.component.KoinComponent
 import org.koin.core.component.get
 import org.koin.core.component.inject
+import androidx.compose.ui.graphics.Color
 
 object Ui : KoinComponent {
     val scope: CoroutineScope by inject()
@@ -63,8 +64,17 @@ object Ui : KoinComponent {
             ProvideDebugInfo(AppInfo.isInDebugMode()) {
                 ProvideLanguageManager(languageManager) {
                     ProvideNotificationManager {
+                        val newColors = ABDownloaderTheme.
+                            myColors.copy(
+                                primary = Color(0xFF606C38), // Dark Moss Green
+                                primaryVariant = Color(0xFF283618), // Pakistan Green
+                                secondary = Color(0xFFFEDFA0), // Cornsilk
+                                secondaryVariant = Color(0xFFDAA15E), // Earth Yellow
+                                background = Color(0xFFBC6C25) // Tigers Eye
+                            )
+
                         ABDownloaderTheme(
-                            myColors = theme,
+                            myColors = newColors,
                             uiScale = appComponent.uiScale.collectAsState().value
                         ) {
                             ProvideGlobalExceptionHandler(globalAppExceptionHandler) {
