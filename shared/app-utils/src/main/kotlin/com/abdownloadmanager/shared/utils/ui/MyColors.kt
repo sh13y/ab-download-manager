@@ -164,3 +164,34 @@ fun AnimatedColors(
         id = toBeAnimated.id,
     )
 }
+
+val darkColors = MyColors(
+    primary = Color(0xFFE63946), // Red Pantone
+    onPrimary = Color.White, // Text color on primary
+    secondary = Color(0xFFA8DADC), // Non-Photo Blue
+    onSecondary = Color.White, // Text color on secondary
+    background = Color(0xFF1D3557), // Berkeley Blue
+    onBackground = Color(0xFFF1FAEE), // Honeydew
+    surface = Color(0xFF457B9D), // Cerulean
+    error = Color(0xFFE63946), // Red Pantone
+    success = Color(0xFFA8DADC), // Non-Photo Blue
+    warning = Color(0xFFFFC107), // Choose a suitable color for warning
+    info = Color(0xFF1D3557), // Berkeley Blue
+    // Other colors...
+)
+
+val lightColors = MyColors(
+    primary = Color(0xFFE63946), // Red Pantone
+    primaryVariant = Color(0xFFA8DADC), // Non-Photo Blue
+    onPrimary = Color.Black, // Text color on primary
+    secondary = Color(0xFF457B9D), // Cerulean
+    onSecondary = Color.White, // Text color on secondary
+    background = Color(0xFFF1FAEE), // Honeydew
+    onBackground = Color(0xFF1D3557), // Berkeley Blue
+    surface = Color(0xFFFFFFFF), // White for light mode
+    error = Color(0xFFE63946), // Red Pantone
+    success = Color(0xFFA8DADC), // Non-Photo Blue
+    warning = Color(0xFFFFC107), // Choose a suitable color for warning
+    info = Color(0xFF457B9D), // Cerulean
+    // Other colors...
+)
