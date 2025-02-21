@@ -19,7 +19,7 @@
 
 ## Description
 
-[AB Download Manager](https://abdownloadmanager.com) is a desktop app which lets you manage and organize your download files better than before
+[AB Download Manager](https://abdownloadmanager.com) is a desktop app that allows you to manage and organize your download files more effectively.
 
 ## Features
 
@@ -86,11 +86,10 @@ bash <(curl -fsSL https://raw.githubusercontent.com/amir1376/ab-download-manager
 
 ## Project Status & Feedback
 
-Please keep in mind that this project is in the beginning of its journey.
-**lots of features** are on the way!.
+Please keep in mind that this project is at the beginning of its journey.
+**Lots of features** are on the way!
 
-**But**, in the meantime you may face **Bugs or Problems**. so.
-Please report them (by [Community chat](#community) or `GitHub Issues`) to me,And I'll do my best to fix them ASAP
+**But**, in the meantime, you may face **bugs or problems**. Please report them (by [Community chat](#community) or `GitHub Issues`) to me, and I'll do my best to fix them ASAP.
 
 ## Community
 
@@ -116,7 +115,7 @@ If you like my work, Please consider giving it a ⭐ Thanks ❤️
 
 ## Bug Report
 
-If you see bugs in the source code! please report them in the `GitHub Issues` section
+If you see bugs in the source code, please report them in the `GitHub Issues` section.
 
 ## Build From Source
 
@@ -172,8 +171,8 @@ The output will be created in
 
 ## Translations
 
-If you’d like to help translate AB Download Manager into another language, or improve existing translations, you can do
-so on Crowdin. Here’s how:
+If you'd like to help translate AB Download Manager into another language, or improve existing translations, you can do
+so on Crowdin. Here's how:
 
 - Visit the project in [Crowdin](https://crowdin.com/project/ab-download-manager)
 - Please DO NOT submit translations via pull requests.
